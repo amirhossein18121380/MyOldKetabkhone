@@ -1,0 +1,229 @@
+.rating-list li {
+  float: right;
+  color: #ddd;
+  padding: 10px 5px;
+
+}
+
+.rating-list li:hover,
+.rating-list li:hover~li {
+  color: #ffd700;
+}
+
+.rating-list {
+  display: inline-block;
+  list-style: none;
+}
+
+
+/* *************************************************************************** */
+
+.container {
+  width: 500px;
+  height: 500px;
+  color: aqua;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+  float: right;
+  font-size: 25px;
+}
+
+.flex-container {
+  display: inline;
+  position: relative;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.img-con {
+  width: 200px;
+  height: 200px;
+  padding-top: 0px;
+}
+
+
+/* ********************************************************************************************* */
+.rating-group {
+  display: inline-flex;
+}
+
+/* make hover effect work properly in IE */
+.rating__icon {
+  pointer-events: none;
+}
+
+/* hide radio inputs */
+.rating__input {
+ position: absolute !important;
+ left: -9999px !important;
+}
+
+/* set icon padding and size */
+.rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 2rem;
+}
+
+/* set default star color */
+.rating__icon--star {
+  color: orange;
+}
+
+/* set color of none icon when unchecked */
+.rating__icon--none {
+  color: #eee;
+}
+
+/* if none icon is checked, make it red */
+.rating__input--none:checked + .rating__label .rating__icon--none {
+  color: red;
+}
+
+/* if any input is checked, make its following siblings grey */
+.rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+
+/* make all stars orange on rating group hover */
+.rating-group:hover .rating__label .rating__icon--star {
+  color: orange;
+}
+
+/* make hovered input's following siblings grey on hover */
+.rating__input:hover ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+
+/* make none icon grey on rating group hover */
+.rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+   color: #eee;
+}
+
+/* make none icon red on hover */
+.rating__input--none:hover + .rating__label .rating__icon--none {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #F4F2F3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  margin-bottom: 0.15rem;
+}
+
+h2 {
+  font-family: 'Cutive Mono', 'Courier New';
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+}
+
+label {
+  cursor: pointer;
+}
+
+svg {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.15rem;
+}
+
+
+/* hide radio buttons */
+
+input[name="star"] {
+  display: inline-block;
+  width: 0;
+  opacity: 0;
+  margin-left: -2px;
+}
+
+/* hide source svg */
+
+.star-source {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+
+/* set initial color to transparent so fill is empty*/
+
+.star {
+  color: transparent;
+  transition: color 0.2s ease-in-out;
+}
+
+
+/* set direction to row-reverse so 5th star is at the end and ~ can be used to fill all sibling stars that precede last starred element*/
+
+.star-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+label:hover ~ label .star,
+svg.star:hover,
+input[name="star"]:focus ~ label .star,
+input[name="star"]:checked ~ label .star {
+  color: #d62a9d;
+}
+
+input[name="star"]:checked + label .star {
+  animation: starred 0.5s;
+}
+
+input[name="star"]:checked + label {
+  animation: scaleup 1s;
+}
+
+@keyframes scaleup {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes starred {
+  from {
+    color: #600040;
+  }
+  to {
+    color: #d62a9d;
+  }
+}

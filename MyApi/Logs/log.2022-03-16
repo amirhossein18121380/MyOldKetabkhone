@@ -1,0 +1,85 @@
+2022-03-16 01:56:25,947
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-03-16 13:18:12,182
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-03-16 14:24:12,358
+//// ERROR
+////MESSAGE: TranslatorController|GetList
+  System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'AND'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__271_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at DataAccess.DAL.TranslatorDal.GetList(TranslatorGetListFilterViewModel filterModel) in D:\new\KetabKhone\DataAccess\DAL\TranslatorDal.cs:line 108
+   at MyApi.Controllers.TranslatorController.GetList(TranslatorGetListFilterViewModel filterModel) in D:\new\KetabKhone\MyApi\Controllers\TranslatorController.cs:line 49
+ClientConnectionId:30c05cbd-8fe6-41b3-9bf7-29e9eaa58965
+Error Number:156,State:1,Class:15
+ 2022-03-16 16:00:48,014
+//// ERROR
+////MESSAGE: TranslatorController|GetList
+  System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'AND'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at DataAccess.DAL.TranslatorDal.GetList(TranslatorGetListFilterViewModel filterModel)
+   at MyApi.Controllers.TranslatorController.GetList(TranslatorGetListFilterViewModel filterModel) in D:\new\KetabKhone\MyApi\Controllers\TranslatorController.cs:line 49
+ClientConnectionId:c2c64751-a6b9-4557-b11c-6d7dd82908a2
+Error Number:156,State:1,Class:15
+ 2022-03-16 16:01:10,828
+//// ERROR
+////MESSAGE: TranslatorController|GetList
+  System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'AND'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at DataAccess.DAL.TranslatorDal.GetList(TranslatorGetListFilterViewModel filterModel)
+   at MyApi.Controllers.TranslatorController.GetList(TranslatorGetListFilterViewModel filterModel) in D:\new\KetabKhone\MyApi\Controllers\TranslatorController.cs:line 49
+ClientConnectionId:c2c64751-a6b9-4557-b11c-6d7dd82908a2
+Error Number:156,State:1,Class:15
+ 2022-03-16 16:36:16,849
+//// ERROR
+////MESSAGE: translatorController|Updatetranslator
+  System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@Email".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 646
+   at DataAccess.DAL.TranslatorDal.Update(Translator translator)
+   at MyApi.Controllers.TranslatorController.UpdateTranslator() in D:\new\KetabKhone\MyApi\Controllers\TranslatorController.cs:line 373
+ClientConnectionId:541f97cd-622b-40ec-9634-90c335d31d90
+Error Number:137,State:2,Class:15
+ 2022-03-16 23:21:31,806
+//// ERROR
+////MESSAGE: UserController|UpdateUserInfo
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at MyApi.Controllers.Security.UserController.UpdateUserInfo() in D:\new\KetabKhone\MyApi\Controllers\Security\UserController.cs:line 1078
+ 2022-03-16 23:22:25,926
+//// ERROR
+////MESSAGE: UserController|UpdateUserInfo
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at MyApi.Controllers.Security.UserController.UpdateUserInfo() in D:\new\KetabKhone\MyApi\Controllers\Security\UserController.cs:line 1079
+ 

@@ -1,0 +1,141 @@
+<div class="header">My Library</div>
+
+<div class="flex-container">
+    <!-- <h1 *ngIf="studentList$ !== null">
+        There is no book in your library
+    </h1> -->
+    <div *ngFor="let row of studentList$|async">
+
+        <a style="cursor:pointer" [routerLink]="['/book/', row.id]" routerLinkActive="active">
+            <div style="position:relative">
+                <img [src]="row.id | images: row?.bookPictureName : 'Book' " class="img-con" />
+                <span *ngIf="row.bookFormat == 1">
+                    <span class="material-icons red-color bottom-right">headphones </span>
+                </span>
+            </div>
+        </a>
+        <!-- <div style="background-color: #f1f1f1;width:90px;height: 80px;margin-left: 40px;margin-top: 10px;">
+           
+        </div> -->
+        <!-- <button type="button" class="but" (click)="deletebook(row.id)">
+            delete
+        </button> -->
+
+        <button type="button" class="btn danger" (click)="deletebook(row.id)">Delete</button>
+
+
+        <div *ngFor="let col of userbookList$|async">
+            <div *ngIf="row.id == col.bookId">
+                <div *ngIf="col.isPurchase == false">
+                    <button type="button" class="btn danger">Buy</button>
+                </div>
+            </div>
+        </div>
+
+
+        <a style="cursor:pointer" routerLink="/">
+            <span class="name">{{row.bookName}} {{row.publisher}}</span>
+        </a>
+    </div>
+</div>
+
+
+
+
+<!-- 
+
+<div>
+    <table mat-table [dataSource]="dataSource" matSort>
+        <ng-container matColumnDef="img">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Picture</th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px">
+                <img [src]="row.id | images: row?.bookPictureName : 'Book' " class="user-pic" />
+
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>id</th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px">
+                {{ row.id }}
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="bookName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>bookName</th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px">{{
+                row.bookName
+                }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="publisher">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                publisher
+            </th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px">{{
+                row.publisher }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="yearOfPublication">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>yearOfPublication</th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px">{{
+                row.yearOfPublication
+                ? (row.yearOfPublication | date:'shortDate') +
+                " " +
+                (row.yearOfPublication | date: "HH:mm")
+                : "" }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="bookFormat">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>bookFormat</th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px"
+                [ngStyle]="{ text: row.bookFormat == 1 ? 'green' : 'red' }">
+                {{ row.bookFormat }}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="bookType">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>bookType</th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px"
+                [ngStyle]="{ text: row.bookType == 1 ? 'red' : 'green' }">
+                {{ row.bookType}}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="numberOfPages">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>numberOfPages</th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px">
+                {{ row.numberOfPages }}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="language">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>language</th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px">
+                {{ row.language }}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="isbn">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>isbn</th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px">
+                {{ row.isbn }}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="electronicVersionPrice">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>electronicVersionPrice</th>
+            <td mat-cell *matCellDef="let row" style="width: 1%; white-space: nowrap; padding-right: 15px">
+                {{ row.electronicVersionPrice }}
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns" class="example-element-row"></tr>
+
+
+        <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell" colspan="4">No Data Found</td>
+        </tr>
+    </table>
+</div>
+<mat-paginator [length]="totalLength" showFirstLastButtons (page)="pageChanged($event)" [pageSize]="pageSize"
+    [pageSizeOptions]="[5, 25, 50, 100]"></mat-paginator> -->

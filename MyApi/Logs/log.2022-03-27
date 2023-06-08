@@ -1,0 +1,721 @@
+2022-03-27 22:35:09,282
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:35:30,442
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:35:38,971
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:35:41,949
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:35:45,715
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:35:47,309
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:36:12,684
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:36:20,922
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:36:26,118
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:36:31,505
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:36:35,321
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:36:43,697
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:36:45,114
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:36:50,009
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:36:53,626
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:36:55,206
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:37:01,436
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:37:04,360
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:37:12,851
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:37:18,499
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:37:39,894
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:38:02,260
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:38:19,914
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:38:24,162
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:38:27,712
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:38:52,622
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:38:55,355
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:39:00,376
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:39:13,730
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:39:21,685
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:39:30,560
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:39:37,862
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:39:39,684
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:39:48,090
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:39:50,529
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:39:55,860
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:39:57,673
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:40:58,321
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:41:22,555
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:45:40,645
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:46:00,836
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:46:07,401
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:47:10,883
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 22:47:44,708
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:c6770d65-4e3a-4621-93f2-8a049c7571b3
+Error Number:156,State:1,Class:15
+   2022-03-27 23:02:15,458
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1039
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:b38a1929-d272-4555-997e-f39f682a4b63
+Error Number:156,State:1,Class:15
+   

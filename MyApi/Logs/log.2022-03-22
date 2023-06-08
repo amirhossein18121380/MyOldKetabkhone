@@ -1,0 +1,22 @@
+2022-03-22 01:00:57,032
+////  INFO
+////MESSAGE: EmailController|Send Emails => Email Count: 9
+   2022-03-22 01:01:13,589
+////  INFO
+////MESSAGE: EmailController|Send|Send Emails => Until now email count: 0, sent: 0, failed: 0
+   2022-03-22 01:02:36,602
+////  INFO
+////MESSAGE: EmailController|Send||Send Emails => Total Count: 10, Date Time: 0:1:36
+   2022-03-22 01:04:18,162
+////  INFO
+////MESSAGE: EmailController|Send Emails => Email Count: 9
+   2022-03-22 01:04:26,311
+////  INFO
+////MESSAGE: EmailController|Send|Send Emails => Until now email count: 0, sent: 0, failed: 0
+   2022-03-22 01:05:50,345
+////  INFO
+////MESSAGE: EmailController|Send Emails => Email Count: 9
+   2022-03-22 01:05:55,139
+////  INFO
+////MESSAGE: EmailController|Send|Send Emails => Until now email count: 0, sent: 0, failed: 0
+   

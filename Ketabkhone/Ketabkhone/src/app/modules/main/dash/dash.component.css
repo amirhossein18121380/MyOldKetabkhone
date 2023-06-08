@@ -1,0 +1,145 @@
+/* sidebar section css start */
+.user-card {
+  padding: 50px 30px 30px;
+  background-image: linear-gradient(45deg, #7b19cb 0%, #3b26db 99%);
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.user-card-name {
+  font-family: iran-yekan, sans-serif;
+  font-size: 24px;
+  margin-top: 40px;
+  color: #fff;
+}
+
+.avatar-upload {
+  position: relative;
+  max-width: 160px;
+  margin: auto;
+}
+
+.avatar-upload .obj-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 124%;
+  height: 124%;
+  margin-left: -14%;
+  margin-top: -5%;
+}
+
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 6px;
+  z-index: 1;
+  bottom: 0;
+}
+
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, #b122e6 0%, #ff63de 100%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all .2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit input + label:after {
+  content: "\f030";
+  font-family: "icomoon", sans-serif;
+  color: #ffffff;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.avatar-upload .avatar-preview {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  border-radius: 100%;
+  background-color: #57a8d4;
+}
+
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-action-card {
+  padding: 10px 0;
+  margin-top: 20px;
+  background-image: linear-gradient(45deg, #3b26db 1%, #7b19cb 100%);
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.user-action-list li.active a {
+  background: #3b26db;
+  background: linear-gradient(to left, #ad1f83, rgba(108, 0, 146, 0.25), rgba(59, 38, 219, 0.001));
+  border-color: #d000ff;
+}
+
+.user-action-list li a {
+  font-family: iran-yekan, sans-serif;
+  font-size: 17px;
+  padding: 12px 30px;
+  display: block;
+  border-right: 2px solid transparent;
+  cursor: pointer;
+  color: #fff;
+}
+
+.user-action-list li a:hover,
+.user-action-list li a:active {
+  color: #ffba52;
+}
+
+.user-action-list li a .badge {
+  float: left;
+  padding: 3px 8px 4px;
+  color: #ffffff;
+  background-color: #7368f5;
+  border-radius: 999px;
+  font-size: 16px;
+  font-family: mont, sans-serif;
+}
+
+.modal-header h4,
+.modal-header span {
+  color: #555;
+}
+
+.modal-header h4 {
+  font-size: 20px;
+  font-family: iran-yekan, sans-serif;
+}
+
+.modal-body p {
+  color: #555;
+  font-size: 18px;
+}
+
+.btn-model.btn.btn-sm {
+  font-size: 16px;
+  min-width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

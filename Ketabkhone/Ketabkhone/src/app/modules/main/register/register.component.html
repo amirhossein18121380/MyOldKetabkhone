@@ -1,0 +1,197 @@
+<!-- <section class="account-section">
+    <div class="container-fluid">
+      <div class="account-wrapper">
+        <div class="left-side">
+          <div class="section-header">
+            <h2 class="title">ایجاد حساب</h2>
+            <p>خوشحالیم که اینجا هستید! </p>
+          </div>
+  
+          <form [formGroup]="regForm" (ngSubmit)="onSubmit()" class="login-form">
+  
+            <div class="form-group mb-30">
+              <label for="userName"><i class="icon icon-user-o"></i></label>
+              <input [ngClass]="{invalid: f['userName'].touched && f['userName'].invalid}"
+                     formControlName="userName" type="text" id="userName" placeholder="Username">
+            </div>
+            <small *ngIf="f['userName'].touched && f['userName'].invalid">نام کاربری باید حداقل 5 کاراکتر باشد</small>
+  
+            <div class="form-group mb-30">
+              <label for="email"><i class="icon icon-email"></i></label>
+              <input [ngClass]="{invalid: f['email'].touched && f['email'].invalid}"
+                     formControlName="email" type="email" id="email" placeholder="Email Address">
+            </div>
+            <small *ngIf="f['email'].touched && f['email'].invalid">
+              {{f['email'].value?.length > 0 ? 'ایمیل وارد شده صحیح نمی باشد' : 'ایمیل خود را وارد نمایید'}}
+            </small>
+  
+            <div class="row d-ltr">
+              <div class=" col-lg-12 col-xl-6">
+                <div class="form-group mb-30">
+                  <label for="pass"><i class="icon icon-lock"></i></label>
+                  <input [ngClass]="{invalid: f['pass'].touched && f['pass'].invalid}"
+                         formControlName="pass" [type]="isShowPass ? 'text' : 'password'" id="pass"
+                         placeholder="Password">
+                  <span class="pass-type">
+                    <i class="icon" [ngClass]="{'icon-eye': !isShowPass, 'icon-eye-slash': isShowPass}"
+                       (click)="toggleShowPass()"></i>
+                  </span>
+                </div>
+                <small *ngIf="f['pass'].touched && f['pass'].invalid">
+                  {{f['pass']?.value?.length > 0 ? 'پسورد باید حداقل 6 کاراکتر باشد' : 'پسورد را وارد نمایید'}}
+                </small>
+              </div>
+  
+              <div class=" col-lg-12 col-xl-6">
+                <div class="form-group mb-30">
+                  <label for="con-pass"><i class="icon icon-lock"></i></label>
+                  <input [ngClass]="{invalid: f['conPass'].touched && f['conPass'].invalid}"
+                         formControlName="conPass" [type]="isShowPass ? 'text' : 'password'" id="con-pass"
+                         placeholder="Confirm Password">
+                  <span class="pass-type">
+                    <i class="icon" [ngClass]="{'icon-eye': !isShowPass, 'icon-eye-slash': isShowPass}"
+                       (click)="toggleShowPass()"></i>
+                  </span>
+                </div>
+                <small *ngIf="f['conPass'].touched && f['conPass'].invalid">
+                  {{f['conPass']?.value?.length > 0 ? 'تکرار پسورد با پسورد یکسان نیست' : 'تکرار پسورد را وارد نمایید'}}
+                </small>
+              </div>
+            </div>
+  
+            <div class="form-group tel-container" [ngClass]="{invalid: f['tel'].touched && f['tel'].invalid}">
+                <label for="tel"><i class="icon icon-lock"></i></label>
+                <input [ngClass]="{invalid: f['tel'].touched && f['tel'].invalid}"
+                       formControlName="tel" [type]="isShowPass ? 'text' : 'password'" id="con-pass"
+                       placeholder="tel">
+            </div>
+            <small *ngIf="f['tel'].touched && f['tel'].invalid">
+  
+              {{f['tel']?.value?.toString().length > 0 ? 'موبایل وارد شده صحیح نمی باشد' : 'شماره موبایل خود را وارد نمایید'}}
+            </small>
+  
+  
+            <label class="checkbox mt-2">
+              <input formControlName="rules" id="rules" type="checkbox">
+              <svg>
+                <use xlink:href="assets/images/icons.svg#checkbox-path"></use>
+              </svg>
+              <span>تایید میکنم <a routerLink="/rules">قوانین و مقررات</a> سایت را می پذیرم.</span>
+            </label>
+  
+            <button class="btn btn-primary mt-4" type="submit" appClickRippleEffect [disabled]="regForm.invalid">ثبت نام</button>
+  
+          </form>
+  
+        </div>
+  
+        <div class="right-side cl-white">
+          <div class="section-header mb-0">
+            <h3 class="title mt-0">در حال حاضر حساب دارید؟</h3>
+            <p>وارد سیستم شوید و به داشبورد خود بروید. </p>
+            <button routerLink="/login" appClickRippleEffect class="btn btn-secondary">ورود به حساب</button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+   -->
+
+<!-- 
+<div class="main">
+
+  <section class="signup">
+    <div class="container">
+      <div class="signup-content">
+        <div class="signup-form">
+          <h2 class="form-title">Sign up</h2>
+          <form [formGroup]="regForm" (ngSubmit)="onSubmit()" class="register-form" id="register-form">
+            <div class="form-group">
+              <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+              <input type="text" name="name" id="name" placeholder="Your Name"
+                [ngClass]="{invalid: f['userName'].touched && f['userName'].invalid}" formControlName="userName"
+                type="text" id="userName" />
+            </div>
+
+            <small *ngIf="f['userName'].touched && f['userName'].invalid">نام کاربری باید حداقل 5 کاراکتر باشد</small>
+
+
+            <div class="form-group">
+              <label for="email"><i class="zmdi zmdi-email"></i></label>
+              <input type="email" name="email" id="email" placeholder="Your Email" 
+              [ngClass]="{invalid: f['email'].touched && f['email'].invalid}"
+                     formControlName="email" />
+            </div>
+
+            <small *ngIf="f['email'].touched && f['email'].invalid">
+              {{f['email'].value?.length > 0 ? 'ایمیل وارد شده صحیح نمی باشد' : 'ایمیل خود را وارد نمایید'}}
+            </small>
+
+
+
+            <div class="form-group">
+              <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+              <input type="password" name="pass" id="pass" placeholder="Password"
+                [ngClass]="{invalid: f['pass'].touched && f['pass'].invalid}" formControlName="pass"
+                [type]="isShowPass ? 'text' : 'password'" />
+
+              <span class="pass-type">
+                <i class="icon" [ngClass]="{'icon-eye': !isShowPass, 'icon-eye-slash': isShowPass}"
+                  (click)="toggleShowPass()"></i>
+              </span>
+            </div>
+
+            <small *ngIf="f['pass'].touched && f['pass'].invalid">
+              {{f['pass']?.value?.length > 0 ? 'پسورد باید حداقل 6 کاراکتر باشد' : 'پسورد را وارد نمایید'}}
+            </small>
+
+            <div class="form-group">
+              <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+              <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"
+                [ngClass]="{invalid: f['conPass'].touched && f['conPass'].invalid}" formControlName="conPass"
+                [type]="isShowPass ? 'text' : 'password'" />
+
+              <span class="pass-type">
+                <i class="icon" [ngClass]="{'icon-eye': !isShowPass, 'icon-eye-slash': isShowPass}"
+                  (click)="toggleShowPass()"></i>
+              </span>
+            </div>
+
+            <small *ngIf="f['conPass'].touched && f['conPass'].invalid">
+              {{f['conPass']?.value?.length > 0 ? 'تکرار پسورد با پسورد یکسان نیست' : 'تکرار پسورد را وارد نمایید'}}
+            </small>
+
+            <div class="form-group">
+              <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+              <input type="number" name="your_name" id="your_name"
+                [ngClass]="{invalid: f['tel'].touched && f['tel'].invalid}" formControlName="tel"
+                [type]="isShowPass ? 'text' : 'password'" id="con-pass" placeholder="tel" />
+            </div>
+
+
+            <small *ngIf="f['tel'].touched && f['tel'].invalid">
+  
+              {{f['tel']?.value?.toString().length > 0 ? 'موبایل وارد شده صحیح نمی باشد' : 'شماره موبایل خود را وارد نمایید'}}
+            </small>
+        
+  
+
+            <div class="form-group">
+              <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+              <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in <a
+                  href="#" class="term-service">Terms of service</a></label>
+            </div>
+            <div class="form-group form-button">
+              <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+            </div>
+          </form>
+        </div>
+        <div class="signup-image">
+          <figure><img src="assets/images/signup-image.jpg" alt="sing up image"></figure>
+          <a href="#" class="signup-image-link">I am already member</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div> -->

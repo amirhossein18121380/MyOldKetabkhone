@@ -1,0 +1,124 @@
+2022-03-21 19:17:19,317
+//// ERROR
+////MESSAGE: AccountController|RefreshToken
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at DataAccess.DAL.Security.UserTokenDal.GetByRefreshToken(String refreshToken) in D:\new\KetabKhone\DataAccess\DAL\Security\UserTokenDal.cs:line 61
+   at Services.Helpers.TokenStoreService.FindTokenAsync(String refreshTokenValue) in D:\new\KetabKhone\MyApi\Helpers\TokenStoreService.cs:line 147
+   at MyApi.Controllers.Security.AccountController.RefreshToken(Token model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 528
+ 2022-03-21 19:26:05,629
+//// ERROR
+////MESSAGE: MessageController|GetMessage
+  System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Security.Messages'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1013
+   at DataAccess.DAL.Security.MessagesDal.GetListByUserId(Int64 userId, Int32 pageSize, Int32 pageNumber) in D:\new\KetabKhone\DataAccess\DAL\Security\MessagesDal.cs:line 44
+   at MyApi.Controllers.Security.MessageController.GetMessage(Int64 userId, PaginationData data) in D:\new\KetabKhone\MyApi\Controllers\Security\MessageController.cs:line 137
+ClientConnectionId:388c5a3f-573d-4905-846a-0211c15f015f
+Error Number:208,State:1,Class:16
+ 2022-03-21 19:34:28,422
+//// ERROR
+////MESSAGE: MessageController|GetMessage
+  System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Security.Messages'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1013
+   at DataAccess.DAL.Security.MessagesDal.GetListByUserId(Int64 userId, Int32 pageSize, Int32 pageNumber) in D:\new\KetabKhone\DataAccess\DAL\Security\MessagesDal.cs:line 44
+   at MyApi.Controllers.Security.MessageController.GetMessage(Int64 userId, PaginationData data) in D:\new\KetabKhone\MyApi\Controllers\Security\MessageController.cs:line 137
+ClientConnectionId:388c5a3f-573d-4905-846a-0211c15f015f
+Error Number:208,State:1,Class:16
+ 2022-03-21 19:39:31,948
+//// ERROR
+////MESSAGE: MessageController|GetMessage
+  System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'false'.
+Invalid column name 'false'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1013
+   at DataAccess.DAL.Security.MessagesDal.GetListByUserId(Int64 userId, Int32 pageSize, Int32 pageNumber)
+   at MyApi.Controllers.Security.MessageController.GetMessage(Int64 userId, PaginationData data) in D:\new\KetabKhone\MyApi\Controllers\Security\MessageController.cs:line 137
+ClientConnectionId:388c5a3f-573d-4905-846a-0211c15f015f
+Error Number:207,State:1,Class:16
+ 2022-03-21 23:46:49,511
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-03-21 23:54:30,335
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-03-21 23:55:07,710
+//// ERROR
+////MESSAGE: EmailController|Add
+  System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Id', table 'KetabKhoneDB.common.EmailTemplate'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at DataAccess.DAL.Common.EmailDal.Insert(EmailTemplate entity) in D:\new\KetabKhone\DataAccess\DAL\Common\EmailDal.cs:line 54
+   at MyApi.Controllers.Common.EmailController.Add(EmailTemplate data) in D:\new\KetabKhone\MyApi\Controllers\Common\EmailController.cs:line 119
+ClientConnectionId:a949de0c-0db7-4616-9af2-c30941c1fc35
+Error Number:515,State:2,Class:16
+ 2022-03-21 23:55:16,636
+//// ERROR
+////MESSAGE: EmailController|Add
+  System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Id', table 'KetabKhoneDB.common.EmailTemplate'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at DataAccess.DAL.Common.EmailDal.Insert(EmailTemplate entity) in D:\new\KetabKhone\DataAccess\DAL\Common\EmailDal.cs:line 54
+   at MyApi.Controllers.Common.EmailController.Add(EmailTemplate data) in D:\new\KetabKhone\MyApi\Controllers\Common\EmailController.cs:line 119
+ClientConnectionId:a949de0c-0db7-4616-9af2-c30941c1fc35
+Error Number:515,State:2,Class:16
+ 2022-03-21 23:55:36,849
+//// ERROR
+////MESSAGE: EmailController|Add
+  System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Id', table 'KetabKhoneDB.common.EmailTemplate'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at DataAccess.DAL.Common.EmailDal.Insert(EmailTemplate entity) in D:\new\KetabKhone\DataAccess\DAL\Common\EmailDal.cs:line 54
+   at MyApi.Controllers.Common.EmailController.Add(EmailTemplate data) in D:\new\KetabKhone\MyApi\Controllers\Common\EmailController.cs:line 119
+ClientConnectionId:a949de0c-0db7-4616-9af2-c30941c1fc35
+Error Number:515,State:2,Class:16
+ 2022-03-21 23:57:50,851
+//// ERROR
+////MESSAGE: EmailController|Add
+  System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Id', table 'KetabKhoneDB.common.EmailTemplate'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at DataAccess.DAL.Common.EmailDal.Insert(EmailTemplate entity) in D:\new\KetabKhone\DataAccess\DAL\Common\EmailDal.cs:line 54
+   at MyApi.Controllers.Common.EmailController.Add(EmailTemplate data) in D:\new\KetabKhone\MyApi\Controllers\Common\EmailController.cs:line 119
+ClientConnectionId:a949de0c-0db7-4616-9af2-c30941c1fc35
+Error Number:515,State:2,Class:16
+ 

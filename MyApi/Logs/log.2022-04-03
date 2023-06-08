@@ -1,0 +1,86 @@
+2022-04-03 12:32:36,169
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1013
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes) in D:\new\KetabKhone\DataAccess\DAL\Transaction\TransactionInfoDal.cs:line 174
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:f15e3b62-ef16-438d-9e19-205254a76ce8
+Error Number:156,State:1,Class:15
+   2022-04-03 12:54:06,446
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:54:09,806
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:54:12,518
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:54:16,085
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:54:23,446
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:54:33,626
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:54:41,694
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:55:29,412
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:57:54,680
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:58:32,787
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:59:26,346
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:59:29,051
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 12:59:40,777
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 13:00:16,290
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 13:01:12,485
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 13:01:28,291
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 13:03:36,037
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 13:07:09,097
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 13:07:11,393
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 13:14:23,476
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 13:27:00,052
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 13:27:19,723
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-04-03 19:03:49,986
+////  INFO
+////MESSAGE: Something wrong in deleting the like.
+   

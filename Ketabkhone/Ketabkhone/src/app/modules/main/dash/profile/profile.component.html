@@ -1,0 +1,269 @@
+<div class="user-card" style="position:absolute">
+  <div class="avatar-upload">
+    <div class="obj-el"><img src="../../../../assets/images/elements/profile-obj.png" alt="image"></div>
+    <div class="avatar-edit">
+      <input #avatarInput (change)="onChangeAvatarInput(avatarInput)" type='file' accept=".png, .jpg, .jpeg"
+        style="visibility: hidden" />
+      <input id="imageUpload" (click)="onClickChangeImage(imageTemplate)" />
+      <label for="imageUpload"></label>
+    </div>
+    <div class="avatar-preview">
+      <div [ngStyle]="{'background-image': accountService.profileInfo.profileImageName?.length > 0
+      ? 'url(' + playerImagePath + accountService.profileInfo.profileImageName + ')'
+      : 'url(\'assets/images/img-profile.svg\')'}">
+      </div>
+    </div>
+  </div>
+  <h3 class="user-card-name">{{accountService.profileInfo.userName}}</h3>
+</div><!-- user-card end -->
+
+<ng-template #imageTemplate>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Edit Profilr Picture</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="imageModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>What do you want to do?</p>
+    <button type="button" class="btn-model btn btn-sm btn-success" (click)="editProfileImage()">
+      {{accountService.profileInfo.profileImageName?.length > 0 ? 'تغییر' : 'افزودن'}}
+    </button>
+    <button *ngIf="accountService.profileInfo.profileImageName?.length > 0" type="button"
+      class="btn-model btn btn-sm btn-danger mr-3" (click)="deleteProfileImage()">Delete
+    </button>
+    <button type="button" class="btn-model btn btn-sm btn-negative mr-3" (click)="imageModalRef.hide()">Cancel</button>
+  </div>
+</ng-template>
+
+
+<!-- 
+<section style="position:relative;">
+  <div class="profile-wrapper">
+
+    <div class="section-header">
+      <h2 class="title">Edit Profile</h2>
+    </div>
+
+    <form [formGroup]="profileForm" (ngSubmit)="onClickUpdateProfile()" class="profile-form ">
+      <span class="input-title">First Name</span>
+      <div class="form-group ">
+        <label for="firstName"><i class="icon icon-passport"></i></label>
+        <input formControlName="firstName" type="text" id="firstName" placeholder="First Name">
+      </div>
+
+      <span class="input-title">Last Name</span>
+      <div class="form-group">
+        <label for="lastName"><i class="icon icon-passport"></i></label>
+        <input formControlName="lastName" type="text" id="lastName" placeholder="Last Name">
+      </div>
+
+      <span class="input-title">gender</span>
+      <div class="form-group">
+        <label for="gender"><i class="icon icon-male"></i></label>
+        <select name="gender" id="gender" formControlName="gender">
+          <option value="" selected disabled hidden>Choose here</option>
+          <option value="1">man</option>
+          <option value="0">woman</option>
+        </select>
+      </div>
+
+      <span class="input-title col-md-6"> birthday </span>
+      <div class="form-group">
+        <label for="birthDay"><i class="icon icon-calendar"></i></label>
+        <input formControlName="birthDay" type="text" id="birthDay" placeholder="Birth Day" class="form-control"
+          bsDatepicker>
+      </div>
+
+      <span class="input-title"> user Name</span>
+      <div class="form-group">
+        <label for="userName"><i class="icon icon-user-o"></i></label>
+        <input [ngClass]="{invalid: profileF['userName'].touched && profileF['userName'].invalid}"
+          formControlName="userName" type="text" id="userName" placeholder="Username">
+      </div>
+      <small *ngIf="profileF['userName'].touched && profileF['userName'].invalid">Enter user name</small>
+
+      <span class="input-title">Display Name</span>
+      <div class="form-group">
+        <label for="displayName"><i class="icon icon-user-o"></i></label>
+        <input formControlName="displayName" type="text" id="displayName" placeholder="Display Name">
+      </div>
+
+      <span class="input-title">mobile Number</span>
+      <div class="form-group tel-container disabled"
+        [ngClass]="{invalid: profileF['tel'].touched && profileF['tel'].invalid}">
+
+        <label for="userName"><i class="icon icon-user-o"></i></label>
+        <input [ngClass]="{invalid: profileF['userName'].touched && profileF['userName'].invalid}"
+          formControlName="userName" type="text" id="userName" placeholder="Username">
+
+      </div>
+      <small *ngIf="profileF['tel'].touched && profileF['tel'].invalid">
+        {{profileF['tel']?.value?.toString().length > 0 ? 'موبایل وارد شده صحیح نمی باشد' : 'شماره موبایل خود راواردنمایید'}}
+      </small>
+
+      <button class="btn btn-success mt-5" type="submit" appClickRippleEffect
+        [disabled]="profileForm.invalid || !isChangeProfileInfo">Update</button>
+    </form>
+
+  </div>
+
+</section>
+
+ -->
+
+
+
+
+ <div class="wrapper">
+  <!--Top menu -->
+  <div class="sidebar" style="border-radius:9px">
+    <ul style=" list-style-type: none; padding-left: 0px;">
+      <li class="accounti">
+      
+          <!-- <span class="icon"><i class="fas fa-desktop"></i></span> -->
+          <span class="item">Account</span>
+      
+      </li>
+      <li>
+        <a routerLink="/panel/deposit">
+          <!-- <span class="icon"><i class="fas fa-desktop"></i></span> -->
+          <span class="item">Charge wallet</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/panel/library">
+          <!-- <span class="icon"><i class="fas fa-user-friends"></i></span> -->
+          <span class="item">MyLibrary</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/panel/bookmarks">
+          <!-- <span class="icon"><i class="fas fa-tachometer-alt"></i></span> -->
+          <span class="item">BookMarks</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <!-- <span class="icon"><i class="fas fa-database"></i></span> -->
+          <span class="item">Discounts & Scores</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/panel/transactions">
+          <!-- <span class="icon"><i class="fas fa-chart-line"></i></span> -->
+          <span class="item">Transaction List</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <!-- <span class="icon"><i class="fas fa-user-shield"></i></span> -->
+          <span class="item">Device management</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/panel/profile">
+          <!-- <span class="icon"><i class="fas fa-cog"></i></span> -->
+          <span class="item">Edit Uset Info</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/reset">
+          <!-- <span class="icon"><i class="fas fa-cog"></i></span> -->
+          <span class="item">Change Password</span>
+        </a>
+      </li>
+      <!-- <li>
+        <a href="#">
+        
+          <span class="item">Log Out</span>
+        </a>
+      </li> -->
+
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container rounded bg-white mt-5 conti" >
+  <div class="row">
+    <div class="col-md-8">
+      <div class="p-3 py-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex flex-row align-items-center back"><i class="fa fa-long-arrow-left mr-1 mb-1"></i>
+            <h6>Back to home</h6>
+          </div>
+          <h6 class="text-right">Edit Profile</h6>
+        </div>
+        <form [formGroup]="profileForm" (ngSubmit)="onClickUpdateProfile()">
+        <div class="row mt-2">
+          <div class="col-md-6">          
+            <span class="input-title">First Name</span>
+            <input formControlName="firstName" type="text" class="form-control" placeholder="first name" >
+          </div>
+          <div class="col-md-6">
+            <span class="input-title">Last Name</span>
+            <input formControlName="lastName" type="text" class="form-control" placeholder="last name">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <!-- <input type="text" class="form-control" placeholder="Email" value="john_doe12@bbb.com"> -->
+            <span class="input-title">gender</span>
+            <select name="gender" id="gender" formControlName="gender" class="form-control">
+              <option value="" selected disabled hidden>Choose here</option>
+              <option value="1">man</option>
+              <option value="0">woman</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <span class="input-title col-md-6"> birthday </span>        
+            <input type="text" formControlName="birthDay" class="form-control"  placeholder="birthday" bsDatepicker>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <span class="input-title"> user Name</span>
+            <input type="text" formControlName="userName" class="form-control" [ngClass]="{invalid: profileF['userName'].touched && profileF['userName'].invalid}" placeholder="username" >
+            <small *ngIf="profileF['userName'].touched && profileF['userName'].invalid">Enter user name</small>
+          </div>
+          <div class="col-md-6">
+            <span class="input-title">Display Name</span>  
+            <input type="text" formControlName="displayName" class="form-control"  placeholder="Display Name">  
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <span class="input-title">mobile Number</span>
+            <input type="text" formControlName="userName" class="form-control" placeholder="mobile number" [ngClass]="{invalid: profileF['userName'].touched && profileF['userName'].invalid}">
+            <small *ngIf="profileF['tel'].touched && profileF['tel'].invalid">
+              {{profileF['tel']?.value?.toString().length > 0 ? 'موبایل وارد شده صحیح نمی باشد' : 'شماره موبایل خود راواردنمایید'}}
+            </small>
+          </div>
+         
+        <div class="mt-5 text-right">
+          <button class="btn btn-primary profile-button" type="button" appClickRippleEffect >Save Profile</button>
+        </div>
+    
+      </div>
+      </form>
+    </div>
+  </div>
+</div>

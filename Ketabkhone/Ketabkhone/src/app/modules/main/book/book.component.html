@@ -1,0 +1,181 @@
+<div class="container">
+
+    <div class="header">introduce and download book <span>{{info.bookName}}</span></div>
+
+    <div>this is for rate</div>
+
+    <hr style="width: 5px; color: red;width: 100%;">
+
+    <div class="flex-container">
+
+        <div style="display: inline;">
+            <div style="position:relative;float: right;">
+                <img [src]="bookid | images: info?.bookPictureName : 'Book' " class="img-con" />
+                <span *ngIf="info.bookFormat == 1">
+                    <span class="material-icons red-color bottom-right">headphones </span>
+                </span>
+            </div>
+
+            <div>
+                <ul>
+                    <li>
+                        <label>Author</label>
+                        <a style="cursor:pointer;display: inline-block;" routerLink="/"
+                            *ngFor="let au of selectedAuthors">
+                            <span class="name">{{au.authorFirstName}} {{au.authorLastName}}/</span>
+                        </a>
+                    </li>
+                    <li>
+                        <label>Translator</label>
+                        <a style="cursor:pointer;margin-left: 5px;display: inline-block;" routerLink="/"
+                            *ngFor="let tr of selectedTranslators">
+                            <span class="name">{{tr.translatorFirstName}} {{tr.translatorLastName}}/</span>
+                        </a>
+                    </li>
+                    <li>
+                        <label>publisher</label>
+                        <a style="cursor:pointer;display: inline-block;" routerLink="/">
+                            <span class="name">{{info.publisher}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>ّ
+
+            <div style="float: left;width: 100px;background-color: rgb(70, 107, 0);">
+                <label>Price:</label>
+                {{info.electronicVersionPrice}}$
+
+                <button type="button" (click)="addtolibrary()">add to library</button>
+            </div>
+
+            <!-- <input type="checkbox" class="mr-2" name="active" (change)="isbookmarkChange($event)">Bookmark -->
+
+            <mat-checkbox class="mr-2" name="active" [(ngModel)]="userb.isMarked" (change)="isbookmarkChange($event)">
+                Bookmark</mat-checkbox>
+
+            <!-- <mat-checkbox class="mr-2" name="active" (change)="isbookmarkChange($event)"
+             [(ngModel)]="info.isActive">Bookmark</mat-checkbox> -->
+
+            <br>
+            <br>
+            <br>
+            <div>
+                
+                <label>Rate</label>
+                <input matInput [(ngModel)]="averagerate" />
+
+                <!-- <ngb-rating [max]="5" [(rate)]="starRating" [readonly]="false"></ngb-rating> -->
+
+            </div>
+            <app-star-rating [rating]="averagerate" [isEditable]="true" [dataSet]="dataSet"></app-star-rating>
+            <!-- <div class="row">
+                <div class="col-sm-12">
+                    <ul class="list-inline rating-list" *ngFor="let star of stars" style="display: inline-block" >
+                        <li style="color:red;border: 5px solid blue;" (click)="countStar(star)"><i   class="fa fa-star "></i></li>
+                        
+                    </ul>
+                </div>
+            </div> -->
+
+            <div id="full-stars-example">
+                <div class="rating-group">
+                    <input class="rating__input rating__input--none" name="rating" id="rating-none" value="0"
+                        type="radio">
+                    <label aria-label="No rating" class="rating__label" for="rating-none"><i
+                            class="rating__icon rating__icon--none fa fa-ban"></i></label>
+                    <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i></label>
+                    <input class="rating__input" name="rating" id="rating-1" value="1" type="radio"
+                        (click)="addRate(1)">
+                    <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i></label>
+                    <input class="rating__input" name="rating" id="rating-2" value="2" type="radio"
+                        (click)="addRate(2)">
+                    <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i></label>
+                    <input class="rating__input" name="rating" id="rating-3" value="3" type="radio"
+                        (click)="addRate(3)">
+                    <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i></label>
+                    <input class="rating__input" name="rating" id="rating-4" value="4" type="radio"
+                        (click)="addRate(4)">
+                    <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                            class="rating__icon rating__icon--star fa fa-star"></i></label>
+                    <input class="rating__input" name="rating" id="rating-5" value="5" type="radio"
+                        (click)="addRate(5)">
+                </div>
+            </div>
+
+            <br>
+
+            <!-- <fieldset class="rating">
+   
+                <input type="radio" id="star5" name="rating" value="5" (click)="countStar(rate)"[(ngModel)]="this.rate"/><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" (click)="countStar(rate)"[(ngModel)]="this.rate"/><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" (click)="countStar(rate)"[(ngModel)]="this.rate"/><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" (click)="countStar(rate)"[(ngModel)]="this.rate"/><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" (click)="countStar(rate)"[(ngModel)]="this.rate"/><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+
+            </fieldset>
+           -->
+
+            <mat-checkbox class="mr-2" name="active" [(ngModel)]="this.IsLiked" (change)="isLikeChange($event)">
+                Like</mat-checkbox>
+
+                <br>
+
+            <mat-checkbox class="mr-2" name="active" [(ngModel)]="this.IsDesLiked" (change)="isDesLikeChange($event)">
+                DesLike</mat-checkbox>
+
+                
+            <!-- 
+            <div class="star-source">
+                <svg>
+                       <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
+                          <stop stop-color="#bf209f" offset="0%"></stop>
+                          <stop stop-color="#d62a9d" offset="60%"></stop>
+                          <stop stop-color="#ED009E" offset="100%"></stop>
+                      </linearGradient>
+                  <symbol id="star" viewBox="153 89 106 108">   
+                    <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085"></polygon>
+                  </symbol>
+              </svg>
+              
+              </div>
+              <div class="star-container">
+                <input type="radio" name="star" id="five"  (click)="countStar(rate)"[(ngModel)]="this.rate" value="5">
+                <label for="five">
+                  <svg class="star">
+                    <use xlink:href="#star"/>
+                  </svg>
+                </label>
+                <input type="radio" name="star" id="four"  (click)="countStar(rate)"[(ngModel)]="this.rate" value="4">
+                <label for="four">
+                  <svg class="star">
+                    <use xlink:href="#star"/>
+                  </svg>
+                </label>
+                <input type="radio" name="star" id="three"  (click)="countStar(rate)"[(ngModel)]="this.rate" value="3">
+                <label for="three">
+                  <svg class="star">
+                    <use xlink:href="#star"/>
+                  </svg>
+                </label>
+                <input type="radio" name="star" id="two"  (click)="countStar(rate)"[(ngModel)]="this.rate" value="2">
+                <label for="two">
+                  <svg class="star">
+                    <use xlink:href="#star" />
+                  </svg>
+                </label>
+                <input type="radio" name="star" id="one"  (click)="countStar(rate)"[(ngModel)]="this.rate" value="1">
+                <label for="one">
+                 <svg class="star">
+                  <use xlink:href="#star" />
+                 </svg>
+                </label>
+              
+              </div> -->
+
+        </div>
+    </div>
+</div>

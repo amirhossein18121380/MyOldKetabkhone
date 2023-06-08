@@ -1,0 +1,71 @@
+2022-03-19 00:40:03,583
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 429
+ 2022-03-19 00:40:29,940
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 429
+ 2022-03-19 00:42:42,823
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Helper.SecurityHelper.AdvancePasswordHash(String pass) in D:\new\KetabKhone\Common\Helper\SecurityHelper.cs:line 16
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model)
+ 2022-03-19 00:50:26,416
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Helper.SecurityHelper.AdvancePasswordHash(String pass) in D:\new\KetabKhone\Common\Helper\SecurityHelper.cs:line 16
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 449
+ 2022-03-19 00:51:30,615
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Helper.SecurityHelper.AdvancePasswordHash(String pass) in D:\new\KetabKhone\Common\Helper\SecurityHelper.cs:line 16
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 449
+ 2022-03-19 00:52:35,439
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Helper.SecurityHelper.AdvancePasswordHash(String pass) in D:\new\KetabKhone\Common\Helper\SecurityHelper.cs:line 16
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 449
+ 2022-03-19 00:57:55,007
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Helper.SecurityHelper.AdvancePasswordHash(String pass) in D:\new\KetabKhone\Common\Helper\SecurityHelper.cs:line 16
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 449
+ 2022-03-19 00:57:56,872
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Helper.SecurityHelper.AdvancePasswordHash(String pass) in D:\new\KetabKhone\Common\Helper\SecurityHelper.cs:line 16
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 449
+ 2022-03-19 01:00:26,864
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Helper.SecurityHelper.AdvancePasswordHash(String pass) in D:\new\KetabKhone\Common\Helper\SecurityHelper.cs:line 16
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 449
+ 2022-03-19 01:02:17,832
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Helper.SecurityHelper.AdvancePasswordHash(String pass) in D:\new\KetabKhone\Common\Helper\SecurityHelper.cs:line 16
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 449
+ 2022-03-19 17:15:57,585
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Helper.SecurityHelper.AdvancePasswordHash(String pass) in D:\new\KetabKhone\Common\Helper\SecurityHelper.cs:line 16
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 449
+ 2022-03-19 22:31:40,552
+//// ERROR
+////MESSAGE: AccountController|PanelLogin
+  System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Helper.SecurityHelper.AdvancePasswordHash(String pass) in D:\new\KetabKhone\Common\Helper\SecurityHelper.cs:line 16
+   at MyApi.Controllers.Security.AccountController.PanelLogin(LoginViewModel model) in D:\new\KetabKhone\MyApi\Controllers\Security\AccountController.cs:line 449
+ 

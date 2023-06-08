@@ -1,0 +1,116 @@
+<div style="display: block;height: auto;flex-wrap: wrap;">
+
+
+<section style="width:800px;margin-left: 200px;margin-top: 50px; margin-bottom: 50px;">
+    <div class="deposit-wrapper">
+      <div class="section-header">
+        <h2 class="title">charge wallet</h2>
+        <p>choose your payment method</p>
+      </div>
+  
+      <ng-container *ngIf="staticgateway != null">
+        <div class="row type-wrapper mt-4">
+          <div class="item" *ngFor="let gateWay of staticgateway; let i = index">
+           
+          </div>
+        </div>
+        <small *ngIf="isClicked && selectedGateWay == null" class="type-error">choose your payment method</small>
+      </ng-container>
+  
+      <!-- <div *ngIf="gateways == null" class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+   -->
+     
+  
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <div class="wrapper" id="side">
+    <!--Top menu -->
+    <div class="sidebar" style="border-radius:9px;">
+      <ul style=" list-style-type: none; padding-left: 0px;">
+        <li class="accounti">
+        
+            <!-- <span class="icon"><i class="fas fa-desktop"></i></span> -->
+            <span class="item">Account</span>
+        
+        </li>
+        <li>
+          <a  routerLink="/panel/deposit">
+            <!-- <span class="icon"><i class="fas fa-desktop"></i></span> -->
+            <span class="item">Charge wallet</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/panel/library">
+            <!-- <span class="icon"><i class="fas fa-user-friends"></i></span> -->
+            <span class="item">MyLibrary</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/panel/bookmarks">
+            <!-- <span class="icon"><i class="fas fa-tachometer-alt"></i></span> -->
+            <span class="item">BookMarks</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- <span class="icon"><i class="fas fa-database"></i></span> -->
+            <span class="item">Discounts & Scores</span>
+          </a>
+        </li>
+        <li>
+          <a  routerLink="/panel/transactions">
+            <!-- <span class="icon"><i class="fas fa-chart-line"></i></span> -->
+            <span class="item">Transaction List</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" >
+            <!-- <span class="icon"><i class="fas fa-user-shield"></i></span> -->
+            <span class="item">Device management</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/panel/profile">
+            <!-- <span class="icon"><i class="fas fa-cog"></i></span> -->
+            <span class="item">Edit Uset Info</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/reset">
+            <!-- <span class="icon"><i class="fas fa-cog"></i></span> -->
+            <span class="item">Change Password</span>
+          </a>
+        </li>
+        <!-- <li>
+          <a href="#">
+           
+            <span class="item">Log Out</span>
+          </a>
+        </li> -->
+
+      </ul>
+    </div>
+  </div>
+  
+  
+
+
+
+
+</div>
+
+
+
+  

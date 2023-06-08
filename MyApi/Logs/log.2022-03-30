@@ -1,0 +1,20 @@
+2022-03-30 11:55:02,254
+//// ERROR
+////MESSAGE: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Transaction'.
+Invalid usage of the option NEXT in the FETCH statement.
+Incorrect syntax near the keyword 'Transaction'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1013
+   at DataAccess.DAL.Transaction.TransactionInfoDal.GetUserTransactionReport(GetTransactionReportFilterViewModel filterModel, Int64 userId, Int16[] operationTypes)
+   at MyApi.Controllers.Transaction.TransactionController.GetTransactionReport(GetTransactionReportFilterViewModel data) in D:\new\KetabKhone\MyApi\Controllers\Transaction\TransactionController.cs:line 277
+ClientConnectionId:66dd031b-0ce3-4381-8fd8-9f44fbd3899f
+Error Number:156,State:1,Class:15
+   2022-03-30 13:42:17,840
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   

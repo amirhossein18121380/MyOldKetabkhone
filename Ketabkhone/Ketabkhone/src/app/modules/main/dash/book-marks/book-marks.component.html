@@ -1,0 +1,33 @@
+<div class="header">My BookMarks</div>
+
+<div class="flex-container">
+    <!-- <h1 *ngIf="studentList$ !== null">
+        There is no book in your library
+    </h1> -->
+    <div *ngFor="let row of studentList$|async">
+        
+        <a style="cursor:pointer" [routerLink]="['/book/', row.id]">
+            <div style="position:relative">
+                <img [src]="row.id | images: row?.bookPictureName : 'Book' " class="img-con" />
+                <span *ngIf="row.bookFormat == 1">
+                    <span class="material-icons red-color bottom-right">headphones </span>
+                </span>
+            </div>
+        </a>
+
+        <button type="button" class="btn danger" (click)="deletebook(row.id)">Delete</button>
+
+
+        <div *ngFor="let col of userbookList$|async">
+            <div *ngIf="row.id == col.bookId">
+                <div *ngIf="col.isPurchase == false">
+                    <button type="button" class="btn danger">Buy</button>
+                </div>
+            </div>
+        </div>
+        
+        <a style="cursor:pointer" routerLink="/">
+            <span class="name">{{row.bookName}} {{row.publisher}}</span>
+        </a>
+    </div>
+</div>

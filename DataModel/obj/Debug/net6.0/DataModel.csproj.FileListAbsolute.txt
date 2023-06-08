@@ -1,0 +1,30 @@
+D:\new\KetabKhone\DataModel\bin\Debug\net6.0\DataModel.deps.json
+D:\new\KetabKhone\DataModel\bin\Debug\net6.0\DataModel.dll
+D:\new\KetabKhone\DataModel\bin\Debug\net6.0\ref\DataModel.dll
+D:\new\KetabKhone\DataModel\bin\Debug\net6.0\DataModel.pdb
+D:\new\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\new\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfoInputs.cache
+D:\new\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfo.cs
+D:\new\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.csproj.CoreCompileInputs.cache
+D:\new\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.dll
+D:\new\KetabKhone\DataModel\obj\Debug\net6.0\ref\DataModel.dll
+D:\new\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.pdb
+D:\new\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.csproj.AssemblyReference.cache
+D:\new\KetabKhone\DataModel\bin\Debug\net6.0\Common.dll
+D:\new\KetabKhone\DataModel\bin\Debug\net6.0\Common.pdb
+D:\new\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.csproj.CopyComplete
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\bin\Debug\net6.0\DataModel.deps.json
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\bin\Debug\net6.0\DataModel.dll
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\bin\Debug\net6.0\DataModel.pdb
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\bin\Debug\net6.0\Common.dll
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\bin\Debug\net6.0\Common.pdb
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.csproj.AssemblyReference.cache
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.GeneratedMSBuildEditorConfig.editorconfig
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfoInputs.cache
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfo.cs
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.csproj.CoreCompileInputs.cache
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.csproj.CopyComplete
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.dll
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\obj\Debug\net6.0\refint\DataModel.dll
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\obj\Debug\net6.0\DataModel.pdb
+K:\C#\My C# Projects And Practices\KetabKhone\DataModel\obj\Debug\net6.0\ref\DataModel.dll

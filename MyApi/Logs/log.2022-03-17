@@ -1,0 +1,33 @@
+2022-03-17 14:04:18,449
+//// ERROR
+////MESSAGE: AuthorController|BooksByAuthorId
+  System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@bookid".
+Must declare the scalar variable "@bookid".
+Must declare the scalar variable "@bookid".
+Must declare the scalar variable "@bookid".
+Must declare the scalar variable "@bookid".
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__271_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryMultipleAsync(IDbConnection cnn, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 1013
+   at DataAccess.DAL.AuthorDal.BooksByAuthorId(Int64 id) in D:\new\KetabKhone\DataAccess\DAL\AuthorDal.cs:line 239
+   at MyApi.Controllers.AuthorController.BooksByAuthorId(Int64 id) in D:\new\KetabKhone\MyApi\Controllers\AuthorController.cs:line 220
+ClientConnectionId:e8e1cd57-269d-43b1-a819-c4f3bc1f92f0
+Error Number:137,State:2,Class:15
+ 2022-03-17 22:16:44,670
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-03-17 22:20:56,915
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-03-17 22:21:07,073
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   2022-03-17 22:24:25,855
+////  INFO
+////MESSAGE: اطلاعات ارسالی به سرور معتبر نمی باشند
+   
